@@ -1,0 +1,42 @@
+# Node dependencies (global - prevents any node_modules from being committed)
+node_modules/
+
+# Explicitly ignore node_modules in the known subfolders (explicit paths for clarity)
+ecommerce-backend-main/customer-service/node_modules/
+ecommerce-backend-main/product-order-service/node_modules/
+frontend/ecommerce-frontend/node_modules/
+
+# Next.js build output
+frontend/ecommerce-frontend/.next/
+frontend/ecommerce-frontend/out/
+
+# Nest/Node build output (common)
+**/dist/
+**/build/
+
+# Environment files
+.env
+.env.* 
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Coverage reports
+coverage/
+
+# Docker (if any local files you don't want)
+docker-compose.override.yml
+
+# Misc
+*.local
